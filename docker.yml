@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+    - name: create container
+      shell: docker container run -itd --name cloudknowledge-container -p 9000:80 mandal44/cloudknowledge-job
